@@ -44,14 +44,12 @@ export class ConversorComponent implements OnInit {
    */
   converter(): void {
   	if (this.conversaoForm.form.valid) {
-  	  /*this.conversorService
+  	  this.conversorService
         .converter(this.conversao)
         .subscribe(
           response => this.conversaoResponse = response,
           error => this.possuiErro = true
-        );*/
-      
-      alert('Convertendo: '+JSON.stringify(this.conversao));
+        );
   	}
   }
 
